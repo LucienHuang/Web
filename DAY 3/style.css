@@ -3,17 +3,101 @@
 
 @media(min-width: 1099px){
 	.cont{
-		background-image: url(images/bgcontact.jpg);
+		background-image: url(images/bgcontact.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.mainbody{
+		background-image: url(images/bgmain.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.about{
+		background-image: url(images/bgabout.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.works{
+		background-image: url(images/bgworks.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.aboutdiv{
+		width:80%;
+		height: 87vh;
+		padding-top:80px;
+		margin-left: 10%;
+	}
+
+	.navfix{
+	position: fixed;
+	background: rgba(255, 255, 255, 0.4);
+	top:0px;
+	left: 0px;
+	right:0px;
+	width: 100%;
+	height: 60px;
+	float: center;
+	z-index: 1;
+	transition: all 0.4s linear; 
 	}
 }
 
 @media(max-width: 1100px){
 	.cont{
-		background-image: url(images/bgcontact.jpg);
+		background-image: url(images/bgcontact.png);
 		background-size: 1100px;
 		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.mainbody{
+		background-image: url(images/bgmain.png);
+		background-size: 1100px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.about{
+		background-image: url(images/bgabout.jpg);
+		background-size: 1100px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.works{
+		background-image: url(images/bgworks.png);
+		background-size: 1100px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.aboutdiv{
+		width:880px;
+		height: 87vh;
+		padding-top:80px;
+		margin-left: 10%;
+	}
+
+	.navfix{
+	position: fixed;
+	background: rgba(255, 255, 255, 0.4);
+	top:0px;
+	left: 0px;
+	right:0px;
+	width: 100%;
+	height: 60px;
+	float: center;
+	z-index: 1;
+	transition: all 0.4s linear; 
 	}
 }
 
@@ -26,27 +110,36 @@ body{
 }
 
 img{
-	width: 80%;
+	width: 80%;/*
+	border:3;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.9);*/
+	margin: 0;
 }
 
 p{
-	padding: 10px 40px 10px 40px;
+	padding: 10px 0px 10px 0px;
 	line-height: 20px;
+	color: white;
 }
 
 h1{
 	padding-top: 0px;
-	margin-top: 0px;
+	margin-top: 80px;
 	height: 100px;
 	padding-left: 50px;
-	padding-top: 180px;
-	background-color: black;
+	padding-top: 240px;
+	margin-bottom: 0px;
+	background-color: rgba(0,0,0,0.9);
 	color: white;
 }
 
 nav{
 	float: center;
 	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -69,24 +162,32 @@ nav{
 	background-color: rgba(200,200,200,0.4);
 }
 
-.navfix{
-	position: fixed;
-	background: rgba(255, 255, 255, 0.5);
-	top:0px;
-	left: 0px;
-	right:0px;
-	width: 100%;
-	height: 60px;
-	float: center;
-	transition: all 0.4s linear; 
+.indexdiv{
+	position: relative;
+	margin-top: 20px;
+	margin-left:7%;
+	margin-right: 7%;
 }
+
+.bgdiv{
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	top:0;
+	bottom: 0;
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 100%;
+}
+
+
 
 .navdiv{
 	width: 24%;
 	vertical-align: middle;
 	display: inline-block;
 	text-align: center;
-	padding: 0px;
+	padding-bottom: 0px;
 	margin: 0px;
 }
 
@@ -94,7 +195,8 @@ nav{
 	text-decoration: none;
 	color:black;
 	display: block;
-	margin-top: 5px;
+	padding-bottom: 40px;
+	margin-top: 0px;
 	transition: all 0.3s linear; 
 }
 
@@ -122,12 +224,12 @@ nav{
 	font-size: 20px;
 	text-decoration: none;
 	display: inline-block;
-	color: black;
+	color: white;
 	transition: all 0.3s linear; 
 }
 
 .navbtn:hover{
-	color: #FF1923;
+	color: #FFCC00;
 }
 
 .navbtn:hover-over{
@@ -142,7 +244,7 @@ nav{
 	position: fixed;
 	right:1%;
 	bottom: 2%;
-	background: white;
+	background: rgba(255,255,255,0.4);
 	border-radius: 5px;
 	color: #222222;
 	float: right;
@@ -153,8 +255,7 @@ nav{
 }
 
 #page_btn:hover{
-	color: white;
-	background: #FF332C;
+	background: #FFCC00;
 }
 
 .contdiv1{
@@ -191,6 +292,7 @@ nav{
 	display: inline-block;
 	z-index: -1;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	overflow: auto;
 	transition: all 0.5s linear; 
 }
 
@@ -210,7 +312,7 @@ nav{
 	padding: 20px;
 	color: white;
 	display: inline-block;
-	z-index: -1;
+	z-index: 1;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 	overflow: auto;
 	transition: all 0.5s linear; 
@@ -233,11 +335,80 @@ nav{
 	margin-top: 30px;
 	height: 150px;
 	width: 180px;
-	opacity: 0.8;
+	opacity: 0.6;
 	display: inline-block;
 	transition: all 0,3s linear;
 }
 
 .imgbtn:hover{
 	opacity: 1;
+}
+
+
+.fact{
+	margin-top: 0;
+	margin-right:5px;
+	display: inline-flex;
+	width:10%;
+	height: 40px;
+	transition: all 1s ease-out;
+	background-color: rgba(255,255,255,0.3);
+	overflow-x: hidden;
+	padding: 0px;
+	box-shadow: 8px 8px 16px rgba(0,0,0,0);
+	font-family: "Comfortaa";
+}
+
+.fact:hover{
+	height:100%;
+	box-shadow: 0px 5px 8px rgba(0,0,0,0.4);
+}
+
+.factcontent{
+	padding-top: 20px;
+	margin-top: 40px;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 10px;
+	padding-right:10px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.f1{
+	background-color: rgba(255,34,39,0.8);
+	color: black;
+}
+.f2{
+	background-color: rgba(255,79,16,0.8);
+	color: black;
+}
+.f3{
+	background-color: rgba(255,158,0,0.8);
+	color: black;
+}
+.f4{
+	background-color: rgba(174,255,0,0.8);
+	color: black;
+}
+.f5{
+	background-color: rgba(0,255,114,0.8);
+	color: black;
+}
+.f6{
+	background-color: rgba(4,155,255,0.8);
+	color: black;
+}
+.f7{
+	background-color: rgba(73,34,255,0.8);
+	color: black;
+}
+.f8{
+	background-color: rgba(121,4,255,0.8);
+	color: black;
+}
+.f9{
+	background-color: rgba(255,0,23,0.8);
+	color: black;
 }
