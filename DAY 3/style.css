@@ -1,0 +1,243 @@
+@import 'https://fonts.googleapis.com/css?family=Reem+Kufi';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa';
+
+@media(min-width: 1099px){
+	.cont{
+		background-image: url(images/bgcontact.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+@media(max-width: 1100px){
+	.cont{
+		background-image: url(images/bgcontact.jpg);
+		background-size: 1100px;
+		background-repeat: no-repeat;
+	}
+}
+
+body{
+	padding-top: 0px;
+	margin-top: 0px;
+	background: #EEEEEE;
+	font-family: Reem Kufi, Poiret One, 'Indie Flower';
+	font-size: 18px;
+}
+
+img{
+	width: 80%;
+}
+
+p{
+	padding: 10px 40px 10px 40px;
+	line-height: 20px;
+}
+
+h1{
+	padding-top: 0px;
+	margin-top: 0px;
+	height: 100px;
+	padding-left: 50px;
+	padding-top: 180px;
+	background-color: black;
+	color: white;
+}
+
+nav{
+	float: center;
+	text-align: center;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar {
+	width:8px;
+	height:6px;
+}
+
+::-webkit-scrollbar-thumb {
+	width:80%;
+	background-color: rgba(200,200,200,0.2);
+	background-clip:padding-box;
+	min-height:28px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(200,200,200,0.4);
+}
+
+.navfix{
+	position: fixed;
+	background: rgba(255, 255, 255, 0.5);
+	top:0px;
+	left: 0px;
+	right:0px;
+	width: 100%;
+	height: 60px;
+	float: center;
+	transition: all 0.4s linear; 
+}
+
+.navdiv{
+	width: 24%;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.toplink{
+	text-decoration: none;
+	color:black;
+	display: block;
+	margin-top: 5px;
+	transition: all 0.3s linear; 
+}
+
+.navfix:hover{
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 3px 0px 10px rgba(0,0,0,0.3);
+}
+
+.toplink:hover{
+	margin-top: 15px;
+	color: #0480E8;
+}
+
+.abc{
+	color: #red;
+}
+
+.navi{
+	width:400px;
+	height: 28px;
+}
+
+.navbtn{
+	font-style: normal;
+	font-size: 20px;
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	transition: all 0.3s linear; 
+}
+
+.navbtn:hover{
+	color: #FF1923;
+}
+
+.navbtn:hover-over{
+	color: white;
+}
+
+.navbtn:active{
+	color: #B8121A;
+}
+
+#page_btn{
+	position: fixed;
+	right:1%;
+	bottom: 2%;
+	background: white;
+	border-radius: 5px;
+	color: #222222;
+	float: right;
+	text-decoration: none;
+	padding: 5px 20px;
+	transition: all 0.2s linear; 
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+#page_btn:hover{
+	color: white;
+	background: #FF332C;
+}
+
+.contdiv1{
+	background-color: rgba(0,0,0,0.7);
+	position: relative;
+	left:15%;
+	top: 200px;
+	width: 30%;
+	height: 300px;
+	padding: 20px;
+	color: white;
+	display: inline-block;
+	z-index: 1;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	overflow: auto;
+	transition: all 0.5s linear; 
+}
+
+.contdiv1:hover{
+	background-color: rgba(0,0,0,1);
+	box-shadow: 8px 8px 16px rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.contdiv2{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	left:30%;
+	top: 300px;
+	width: 50%;
+	height: 270px;
+	padding: 20px;
+	color: white;
+	display: inline-block;
+	z-index: -1;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	transition: all 0.5s linear; 
+}
+
+.contdiv2:hover{
+	background-color: rgba(0,0,0,1);
+	box-shadow: 8px 8px 16px rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.contdiv3{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	right:15%;
+	top: 130px;
+	width: 40%;
+	height: 200px;
+	padding: 20px;
+	color: white;
+	display: inline-block;
+	z-index: -1;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	overflow: auto;
+	transition: all 0.5s linear; 
+}
+
+.contdiv3:hover{
+	background-color: rgba(0,0,0,1);
+	box-shadow: 8px 8px 16px rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.contpa{
+	padding: 10px;
+	line-height: 24px;
+	font-family: 'Comfortaa';
+	font-size:20px;
+}
+
+.imgbtn{
+	margin-top: 30px;
+	height: 150px;
+	width: 180px;
+	opacity: 0.8;
+	display: inline-block;
+	transition: all 0,3s linear;
+}
+
+.imgbtn:hover{
+	opacity: 1;
+}
