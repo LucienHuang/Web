@@ -351,12 +351,14 @@ nav{
 	display: inline-flex;
 	width:10%;
 	height: 40px;
-	transition: all 1s ease-out;
+	transition: all 2s ease-in-out;
 	background-color: rgba(255,255,255,0.3);
 	overflow-x: hidden;
+	overflow-y: hidden;
 	padding: 0px;
 	box-shadow: 8px 8px 16px rgba(0,0,0,0);
 	font-family: "Comfortaa";
+	z-index: 1;
 }
 
 .fact:hover{
@@ -368,12 +370,15 @@ nav{
 	padding-top: 20px;
 	margin-top: 40px;
 	width: 100%;
+	line-height: 24px;
 	margin-left: 0;
 	margin-right: 0;
 	padding-left: 10px;
 	padding-right:10px;
 	overflow: auto;
 	overflow-x: hidden;
+	font-size: 16px;
+	z-index: 1;
 }
 
 .f1{
@@ -381,34 +386,48 @@ nav{
 	color: black;
 }
 .f2{
-	background-color: rgba(255,79,16,0.8);
+	background-color: rgba(255,49,97,0.8);
 	color: black;
 }
 .f3{
-	background-color: rgba(255,158,0,0.8);
+	background-color: rgba(255,36,195,0.8);
 	color: black;
 }
 .f4{
-	background-color: rgba(174,255,0,0.8);
+	background-color: rgba(223,60,255,0.8);
 	color: black;
 }
 .f5{
-	background-color: rgba(0,255,114,0.8);
+	background-color: rgba(144,63,255,0.8);
 	color: black;
 }
 .f6{
-	background-color: rgba(4,155,255,0.8);
+	background-color: rgba(70,73,255,0.8);
 	color: black;
 }
 .f7{
-	background-color: rgba(73,34,255,0.8);
+	background-color: rgba(71,123,255,0.8);
 	color: black;
 }
 .f8{
-	background-color: rgba(121,4,255,0.8);
+	background-color: rgba(51,175,255,0.8);
 	color: black;
 }
 .f9{
-	background-color: rgba(255,0,23,0.8);
+	background-color: rgba(48,232,255,0.8);
 	color: black;
+}
+
+.aboutp{
+	color: black;
+}
+
+.abdiv{
+	position: absolute;
+	transition: all 0.6s ease-out;
+	display: inline-block;
+}
+
+.abdiv:hover{
+	transform: scale(1.1);
 }
