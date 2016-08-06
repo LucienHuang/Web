@@ -431,3 +431,84 @@ nav{
 .abdiv:hover{
 	transform: scale(1.1);
 }
+
+@keyframes example{
+	0%{background-image: url(images/work1.png); margin-left:5%; opacity: 0;}
+	6%{background-image: url(images/work1.png); margin-left:25%; opacity: 1;}
+	19%{background-image: url(images/work1.png); margin-left:25%; opacity: 1;}
+	25%{background-image: url(images/work1.png); margin-left:45%; opacity: 0;}
+	26%{background-image: url(images/work2.jpg); margin-left:5%; opacity: 0;}
+	31%{background-image: url(images/work2.jpg); margin-left:25%; opacity: 1;}
+	44%{background-image: url(images/work2.jpg); margin-left:25%; opacity: 1;}
+	50%{background-image: url(images/work2.jpg); margin-left:45%; opacity: 0;}
+	51%{background-image: url(images/work3.png); margin-left:5%; opacity: 0;}
+	57%{background-image: url(images/work3.png); margin-left:25%; opacity: 1;}
+	69%{background-image: url(images/work3.png); margin-left:25%; opacity: 1;}
+	75%{background-image: url(images/work3.png); margin-left:45%; opacity: 0;}
+	76%{background-image: url(images/work4.png); margin-left:5%; opacity: 0;}
+	82%{background-image: url(images/work4.png); margin-left:25%; opacity: 1;}
+	94%{background-image: url(images/work4.png); margin-left:25%; opacity: 1;}
+	100%{background-image: url(images/work4.png); margin-left:45%; opacity: 0;}
+}
+
+#animation1{
+	background-image: url(images/dog.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height:500px;
+	background-clip:no-clip;
+	position: absolute;
+	top: 100px;
+	width:50%;
+	animation-name: example;
+	animation-duration: 48s; 
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.anidiv{
+	width:100%;
+	margin-top:80px;
+	margin-bottom: 0px;
+	height:526px;
+	background: rgba(0,0,0,0.6);
+}
+
+.workdiv{
+	position: relative;
+	left:0;
+	right:0;
+	top: 0px;
+	width:100%;
+	margin-top:0px;
+	background: rgba(0,0,0,0.8);
+	padding-top: 20px;
+	padding-left: 8%;
+}
+
+.workp{
+	margin-top: 30px;
+	color white;
+	/*display: inline-block;*/
+	width: 65%;
+}
+
+.youtube{
+	margin-left: 35%;
+	margin-bottom: 40px;
+}
+
+.divider{
+	background-color: rgba(255,255,255,1);
+	height: 5px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.footer{
+	padding-top: 60px;
+	padding-bottom: 30px;
+	padding-left: 8%;
+	background-color: rgba(0,0,0,0.9);
+	color white;
+}
