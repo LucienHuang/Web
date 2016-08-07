@@ -476,10 +476,10 @@ nav{
 
 .workdiv{
 	position: relative;
-	left:0;
-	right:0;
+	margin-left: 0px;
+	margin-right: 0px;
 	top: 0px;
-	width:100%;
+	width:92%;
 	margin-top:0px;
 	background: rgba(0,0,0,0.8);
 	padding-top: 20px;
@@ -493,9 +493,20 @@ nav{
 	width: 65%;
 }
 
-.youtube{
-	margin-left: 35%;
+.embed-container{
+	position: relative;
+	padding-bottom: 40%;
+	height: 0; overflow: hidden;
+	max-width: 100%; } 
+
+.embed-container iframe, .embed-container object, .embed-container embed 
+	{ position: absolute; 
+	top: 0; 
+	left: 0; 
+	margin-left: 36%;
 	margin-bottom: 40px;
+	width:57%;
+	height: 93%;
 }
 
 .divider{
@@ -503,6 +514,7 @@ nav{
 	height: 5px;
 	margin-top: 40px;
 	margin-bottom: 10px;
+	width: 100%;
 }
 
 .footer{
